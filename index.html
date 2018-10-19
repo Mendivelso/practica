@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alma</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/alertify.core.css">
+    <link rel="stylesheet" type="text/css" href="css/alertify.default.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/sweetalert.css">
+    <link rel="shortcut icon" href="img/favicon.ico"/>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="60">
+    <div class="container">
+      <button type="button" class="btn btn-danger" id="eliminar">Eliminar</button>
+      <button type="button" class="btn btn-success" id="registro">Registro</button>
+    </div>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/validacion.js"></script>
+    <script type="text/javascript" src="js/alertify.min.js"></script>
+    <script type="text/javascript" src="js/valid.js"></script>
+
+    <script type="text/javascript" src="js/sweetalert.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+
+        $('#eliminar').click(function(){
+          swal({
+            title: "Eliminar Registro",
+            text: "Esta seguro de eliminar el registro",
+            type: "warning",
+            showCancelButton: true,
+            confirmButtonClass: 'btn-danger',
+            cancelButtonText: 'Cancelar',
+            confirmButtonText: 'Eliminar',
+            closeOnConfirm: false,
+            //closeOnCancel: false
+          },
+          function(){
+            swal("Eliminado!", "Su registro ha sido eliminado!", "success");
+          });
+
+        });
+
+        $('#registro').click(function(){
+          swal({
+            title: "Quieres registrarte en nuestro voletin?",
+            text: "Resiviras noticias acerca de nuestra marca y promociones de nuestros productos!",
+            type: "warning",
+            showCancelButton: true,
+            confirmButtonClass: "btn-success",
+            cancelButtonClass: "btn-danger",
+            confirmButtonText: "Suscribirme",
+            cancelButtonText: "Cancelar",
+            closeOnConfirm : false,
+            closeOnCancel: false
+          },
+          function(isConfirm) {
+            if (isConfirm) {
+              swal({title: "Deleted!",
+                    text: "Your imaginary file has been deleted.",
+                    type: "success"
+              },
+              function(isConfirm){
+                 window.location.href = "//stackoverflow.com";
+              }
+              );
+
+            } else {
+              swal("Cancelled", "Your imaginary file is safe :)", "error");
+            }
+          });
+
+        });
+      });
+
+    $(function(){
+      $('#txtTel').validCampoFranz('0123456789');
+    });
+    </script>
+</body>
+</html>

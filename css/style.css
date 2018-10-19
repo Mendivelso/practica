@@ -1,0 +1,61 @@
+@font-face {font-family: "Quicksand-Bold";
+  src: url("../css/fonts/Quicksand-Bold.ttf") format("TTF"), /* chrome、firefox */
+  url("../css/fonts/Quicksand-Bold.ttf") format("truetype"); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+}
+
+
+@font-face {font-family: "Quicksand-Regular";
+  src: url("../css/fonts/Quicksand-Regular.ttf") format("TTF"), /* chrome、firefox */
+  url("../css/fonts/Quicksand-Regular.ttf") format("truetype"); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+}
+@font-face {font-family: "Quicksand-Light";
+  src: url("../css/fonts/Quicksand-Light.ttf") format("TTF"), /* chrome、firefox */
+  url("../css/fonts/Quicksand-Light.ttf") format("truetype"); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+}
+
+.alertify-button-ok{
+  background-color: #0d4e58 !important;
+  border: 1px solid #48e0fe !important;
+}
+.alertify{border: 1px solid rgb(13, 78, 88) !important; font-family: "Quicksand-Regular" !important; font-size: 18px !important; }
+
+
+
+
+/*/*placeholder*/
+/*.input::-webkit-input-placeholder { color: darkgray; font-weight: bold;}
+.input:-moz-placeholder { color: darkgray; font-weight: bold;  }
+.input::-moz-placeholder { color: darkgray; font-weight: bold;  }
+.input:-ms-input-placeholder { color: darkgray; font-weight: bold;  }
+
+select::-webkit-input-placeholder { color: darkgray; font-weight: bold;}
+select:-moz-placeholder { color: darkgray; font-weight: bold;  }
+select::-moz-placeholder { color: darkgray; font-weight: bold;  }
+select:-ms-input-placeholder { color: darkgray; font-weight: bold; }*/
+
+
+
+@media screen and (max-width: 1199px){
+
+}
+
+@media screen and (max-width: 991px){
+
+
+
+}
+
+
+
+@media screen and (max-width: 767px){
+
+br{display: none;}
+
+
+}
+
+@media screen and (max-width: 350px){
+
+}
+
+
