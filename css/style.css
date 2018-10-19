@@ -19,6 +19,14 @@
 }
 .alertify{border: 1px solid rgb(13, 78, 88) !important; font-family: "Quicksand-Regular" !important; font-size: 18px !important; }
 
+.navbar{
+   margin-bottom: 0px !important;
+}
+
+.item img{
+  width: 100%;
+}
+
 
 
 
